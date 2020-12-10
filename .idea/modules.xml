@@ -5,8 +5,6 @@
       <module fileurl="file://$PROJECT_DIR$/work-data/data-cas/data-cas.iml" filepath="$PROJECT_DIR$/work-data/data-cas/data-cas.iml" />
       <module fileurl="file://$PROJECT_DIR$/linkapp-work.iml" filepath="$PROJECT_DIR$/linkapp-work.iml" />
       <module fileurl="file://$PROJECT_DIR$/work-datasource-mysql/work-datasource-mysql.iml" filepath="$PROJECT_DIR$/work-datasource-mysql/work-datasource-mysql.iml" />
-      <module fileurl="file://$PROJECT_DIR$/work-datasource-mysql/work-datasource-mysql.iml" filepath="$PROJECT_DIR$/work-datasource-mysql/work-datasource-mysql.iml" />
-      <module fileurl="file://$PROJECT_DIR$/work-kafka/work-kafka.iml" filepath="$PROJECT_DIR$/work-kafka/work-kafka.iml" />
       <module fileurl="file://$PROJECT_DIR$/work-kafka/work-kafka.iml" filepath="$PROJECT_DIR$/work-kafka/work-kafka.iml" />
     </modules>
   </component>
