@@ -32,7 +32,7 @@ public class JProducer extends Thread {
     public void run() {
         int offsetNo = 1;
         while (true) {
-            String msg = new String("Message_" + offsetNo);
+            String msg = new String("my_test_Message_" + offsetNo);
             System.out.println("Send->[" + msg + "]");
             producer.send(new KeyedMessage<Integer, String>(topic, msg));
             offsetNo++;
