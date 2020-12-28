@@ -3,7 +3,17 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/work-data/data-cas/data-cas.iml" filepath="$PROJECT_DIR$/work-data/data-cas/data-cas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/work-data/dubbo-sample/sample-api/dubbo-sample-api-0.5.x.iml" filepath="$PROJECT_DIR$/work-data/dubbo-sample/sample-api/dubbo-sample-api-0.5.x.iml" />
+      <module fileurl="file://$PROJECT_DIR$/work-data/dubbo-sample/sample-consumer/dubbo-sample-consumer-0.5.x.iml" filepath="$PROJECT_DIR$/work-data/dubbo-sample/sample-consumer/dubbo-sample-consumer-0.5.x.iml" />
+      <module fileurl="file://$PROJECT_DIR$/work-data/dubbo-sample/sample-provider/dubbo-sample-provider-0.5.x.iml" filepath="$PROJECT_DIR$/work-data/dubbo-sample/sample-provider/dubbo-sample-provider-0.5.x.iml" />
       <module fileurl="file://$PROJECT_DIR$/linkapp-work.iml" filepath="$PROJECT_DIR$/linkapp-work.iml" />
+      <module fileurl="file://$PROJECT_DIR$/work-data/dubbo-sample/sample-parent-0.5.x.iml" filepath="$PROJECT_DIR$/work-data/dubbo-sample/sample-parent-0.5.x.iml" />
+      <module fileurl="file://$PROJECT_DIR$/work-data/springboot-sample/sample-consumer/springboot-sample-consumer-0.5.x.iml" filepath="$PROJECT_DIR$/work-data/springboot-sample/sample-consumer/springboot-sample-consumer-0.5.x.iml" />
+      <module fileurl="file://$PROJECT_DIR$/work-data/springboot-sample/sample-provider/springboot-sample-provider-0.5.x.iml" filepath="$PROJECT_DIR$/work-data/springboot-sample/sample-provider/springboot-sample-provider-0.5.x.iml" />
+      <module fileurl="file://$PROJECT_DIR$/work-data/springcloud-sample/sample-consumer/springcloud-sample-consumer-0.5.x.iml" filepath="$PROJECT_DIR$/work-data/springcloud-sample/sample-consumer/springcloud-sample-consumer-0.5.x.iml" />
+      <module fileurl="file://$PROJECT_DIR$/work-data/springcloud-sample/sample-eureka-server/springcloud-sample-eureka-0.5.x.iml" filepath="$PROJECT_DIR$/work-data/springcloud-sample/sample-eureka-server/springcloud-sample-eureka-0.5.x.iml" />
+      <module fileurl="file://$PROJECT_DIR$/work-data/springcloud-sample/sample-provider/springcloud-sample-provider-0.5.x.iml" filepath="$PROJECT_DIR$/work-data/springcloud-sample/sample-provider/springcloud-sample-provider-0.5.x.iml" />
+      <module fileurl="file://$PROJECT_DIR$/work-data/transaction-byte-cc/transaction-byte-cc.iml" filepath="$PROJECT_DIR$/work-data/transaction-byte-cc/transaction-byte-cc.iml" />
       <module fileurl="file://$PROJECT_DIR$/work-datasource-mysql/work-datasource-mysql.iml" filepath="$PROJECT_DIR$/work-datasource-mysql/work-datasource-mysql.iml" />
       <module fileurl="file://$PROJECT_DIR$/work-kafka/work-kafka.iml" filepath="$PROJECT_DIR$/work-kafka/work-kafka.iml" />
     </modules>
