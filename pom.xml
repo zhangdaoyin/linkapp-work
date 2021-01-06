@@ -22,6 +22,8 @@
         <module>work-datasource-mysql</module>
         <!-- 数据算法 -->
         <module>work-data</module>
+        <!-- 设计模式 -->
+        <module>work-design</module>
     </modules>
 
     <properties>

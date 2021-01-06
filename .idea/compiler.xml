@@ -17,6 +17,7 @@
         <module name="springcloud-sample-provider-0.5.x" />
         <module name="transaction-byte-cc" />
         <module name="work-datasource-mysql" />
+        <module name="work-design" />
         <module name="work-kafka" />
       </profile>
     </annotationProcessing>
@@ -35,6 +36,7 @@
       <module name="transaction-byte-cc" target="1.8" />
       <module name="work-data" target="1.8" />
       <module name="work-datasource-mysql" target="1.8" />
+      <module name="work-design" target="1.8" />
       <module name="work-kafka" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -45,6 +47,7 @@
       <module name="transaction-byte-cc" options="-parameters" />
       <module name="work-data" options="-parameters" />
       <module name="work-datasource-mysql" options="-parameters" />
+      <module name="work-design" options="-parameters" />
       <module name="work-kafka" options="-parameters" />
     </option>
   </component>
