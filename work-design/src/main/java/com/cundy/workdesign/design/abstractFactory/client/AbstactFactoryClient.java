@@ -33,6 +33,5 @@ public class AbstactFactoryClient {
         color2.fill();
 
 
-
     }
 }
