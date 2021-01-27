@@ -29,21 +29,21 @@ import org.springframework.context.annotation.Import;
 @SpringBootApplication(scanBasePackages = "com.bytesvc.consumer")
 @EnableCircuitBreaker
 @EnableHystrix
-@EnableAutoConfiguration(exclude = { MongoAutoConfiguration.class })  // 使用文件存储时, 不需要配置mongodb
+@EnableAutoConfiguration(exclude = {MongoAutoConfiguration.class})  // 使用文件存储时, 不需要配置mongodb
 public class SampleConsumerMain implements BeanFactoryAware {
-	private static BeanFactory beanFactory;
+    private static BeanFactory beanFactory;
 
-	public static void main(String[] args) {
-		new SpringApplicationBuilder(SampleConsumerMain.class).bannerMode(Banner.Mode.OFF).run(args);
-		System.out.println("springcloud-sample-consumer started!");
-	}
+    public static void main(String[] args) {
+        new SpringApplicationBuilder(SampleConsumerMain.class).bannerMode(Banner.Mode.OFF).run(args);
+        System.out.println("springcloud-sample-consumer started!");
+    }
 
-	public BeanFactory getBeanFactory() {
-		return beanFactory;
-	}
+    public BeanFactory getBeanFactory() {
+        return beanFactory;
+    }
 
-	public void setBeanFactory(BeanFactory factory) throws BeansException {
-		beanFactory = factory;
-	}
+    public void setBeanFactory(BeanFactory factory) throws BeansException {
+        beanFactory = factory;
+    }
 
 }

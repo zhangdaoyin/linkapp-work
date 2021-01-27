@@ -15,7 +15,7 @@ import java.util.concurrent.ExecutionException;
 
 public class KafkaProducerTest {
     private static Log logger = LogFactory.getLog(KafkaProducerTest.class);
-    private static final String broker = "192.168.0.134:9092";   //配置的是kafka broker的ip
+    private static final String broker = "192.168.0.184:9092";   //配置的是kafka broker的ip
     public static Producer<String, String> producer;
     public static AdminClient client;
 

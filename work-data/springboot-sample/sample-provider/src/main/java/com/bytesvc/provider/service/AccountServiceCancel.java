@@ -10,23 +10,23 @@ import com.bytesvc.provider.model.Account;
 
 @Service("accountServiceCancel")
 public class AccountServiceCancel implements IAccountService {
-	@Autowired
-	private IAccountDao accountDao;
+    @Autowired
+    private IAccountDao accountDao;
 
-	@Transactional
-	public void increaseAmount(String acctId, double amount) {
-		Account account = this.accountDao.findById(acctId);
-		account.setAmount(account.getAmount() - amount);
-		this.accountDao.update(account);
-		System.out.printf("undo increase: acct= %s, amount= %7.2f%n", acctId, amount);
-	}
+    @Transactional
+    public void increaseAmount(String acctId, double amount) {
+        Account account = this.accountDao.findById(acctId);
+        account.setAmount(account.getAmount() - amount);
+        this.accountDao.update(account);
+        System.out.printf("undo increase: acct= %s, amount= %7.2f%n", acctId, amount);
+    }
 
-	@Transactional
-	public void decreaseAmount(String acctId, double amount) {
-		Account account = this.accountDao.findById(acctId);
-		account.setAmount(account.getAmount() + amount);
-		this.accountDao.update(account);
-		System.out.printf("undo decrease: acct= %s, amount= %7.2f%n", acctId, amount);
-	}
+    @Transactional
+    public void decreaseAmount(String acctId, double amount) {
+        Account account = this.accountDao.findById(acctId);
+        account.setAmount(account.getAmount() + amount);
+        this.accountDao.update(account);
+        System.out.printf("undo decrease: acct= %s, amount= %7.2f%n", acctId, amount);
+    }
 
 }

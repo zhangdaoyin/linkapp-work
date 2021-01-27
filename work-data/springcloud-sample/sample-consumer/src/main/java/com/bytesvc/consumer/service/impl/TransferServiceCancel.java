@@ -10,13 +10,13 @@ import com.bytesvc.consumer.service.ITransferService;
 @Service("transferServiceCancel")
 public class TransferServiceCancel implements ITransferService {
 
-	@Autowired
-	private TransferDao transferDao;
+    @Autowired
+    private TransferDao transferDao;
 
-	@Transactional
-	public void transfer(String sourceAcctId, String targetAcctId, double amount) {
-		this.transferDao.cancelIncrease(targetAcctId, amount);
-		System.out.printf("exec decrease: acct= %s, amount= %7.2f%n", targetAcctId, amount);
-	}
+    @Transactional
+    public void transfer(String sourceAcctId, String targetAcctId, double amount) {
+        this.transferDao.cancelIncrease(targetAcctId, amount);
+        System.out.printf("exec decrease: acct= %s, amount= %7.2f%n", targetAcctId, amount);
+    }
 
 }

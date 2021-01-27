@@ -8,16 +8,16 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration;
 
-@SpringBootApplication(scanBasePackages = { "com.bytesvc.consumer" })
-@EnableAutoConfiguration(exclude = { MongoAutoConfiguration.class }) // 使用文件存储时, 不需要配置mongodb
+@SpringBootApplication(scanBasePackages = {"com.bytesvc.consumer"})
+@EnableAutoConfiguration(exclude = {MongoAutoConfiguration.class}) // 使用文件存储时, 不需要配置mongodb
 public class SpringBootConsumerBootstrap {
-	static Logger logger = LoggerFactory.getLogger(SpringBootConsumerBootstrap.class);
+    static Logger logger = LoggerFactory.getLogger(SpringBootConsumerBootstrap.class);
 
-	public static void main(String[] args) throws Throwable {
-		SpringApplication application = new SpringApplication(SpringBootConsumerBootstrap.class);
-		application.setBannerMode(Banner.Mode.OFF);
-		application.run(args);
-		logger.info("springboot consumer start success");
-	}
+    public static void main(String[] args) throws Throwable {
+        SpringApplication application = new SpringApplication(SpringBootConsumerBootstrap.class);
+        application.setBannerMode(Banner.Mode.OFF);
+        application.run(args);
+        logger.info("springboot consumer start success");
+    }
 
 }

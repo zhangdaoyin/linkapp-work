@@ -18,7 +18,7 @@ public class KafkaMessageConsumer {
     @Autowired
     KafkaTemplate kafkaTemplate;
 
-    public static final String topic = "test";
+    public static final String topic = "TOPIC_1";
 //
 //    @KafkaListener(topics = topic)
 //    public void consumer(ConsumerRecord consumerRecord) {

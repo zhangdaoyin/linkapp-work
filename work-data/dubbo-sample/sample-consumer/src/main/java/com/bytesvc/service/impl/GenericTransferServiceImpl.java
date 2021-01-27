@@ -14,20 +14,20 @@ import com.bytesvc.service.ITransferService;
 @Compensable(interfaceClass = ITransferService.class, confirmableKey = "transferServiceConfirm", cancellableKey = "transferServiceCancel")
 public class GenericTransferServiceImpl implements ITransferService {
 
-	@javax.annotation.Resource(name = "jdbcTemplate2")
-	private JdbcTemplate jdbcTemplate;
-	@com.alibaba.dubbo.config.annotation.Reference(interfaceClass = IAccountService.class, group = "x-bytetcc", filter = "bytetcc", loadbalance = "bytetcc", cluster = "failfast", retries = -1)
-	private IAccountService remoteAccountService;
+    @javax.annotation.Resource(name = "jdbcTemplate2")
+    private JdbcTemplate jdbcTemplate;
+    @com.alibaba.dubbo.config.annotation.Reference(interfaceClass = IAccountService.class, group = "x-bytetcc", filter = "bytetcc", loadbalance = "bytetcc", cluster = "failfast", retries = -1)
+    private IAccountService remoteAccountService;
 
-	@Transactional(rollbackFor = ServiceException.class)
-	public void transfer(String sourceAcctId, String targetAcctId, double amount) throws ServiceException {
-		this.remoteAccountService.decreaseAmount(sourceAcctId, amount);
-		this.increaseAmount(targetAcctId, amount);
-	}
+    @Transactional(rollbackFor = ServiceException.class)
+    public void transfer(String sourceAcctId, String targetAcctId, double amount) throws ServiceException {
+        this.remoteAccountService.decreaseAmount(sourceAcctId, amount);
+        this.increaseAmount(targetAcctId, amount);
+    }
 
-	private void increaseAmount(String acctId, double amount) throws ServiceException {
-		this.jdbcTemplate.update("update tb_account_two set frozen = frozen + ? where acct_id = ?", amount, acctId);
-		System.out.printf("exec increase: acct= %s, amount= %7.2f%n", acctId, amount);
-	}
+    private void increaseAmount(String acctId, double amount) throws ServiceException {
+        this.jdbcTemplate.update("update tb_account_two set frozen = frozen + ? where acct_id = ?", amount, acctId);
+        System.out.printf("exec increase: acct= %s, amount= %7.2f%n", acctId, amount);
+    }
 
 }

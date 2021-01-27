@@ -9,6 +9,8 @@
         <option value="$PROJECT_DIR$/data-cas/pom.xml" />
         <option value="$PROJECT_DIR$/transaction-byte-cc/pom.xml" />
         <option value="$PROJECT_DIR$/work-design/pom.xml" />
+        <option value="$PROJECT_DIR$/work-data/pom.xml" />
+        <option value="$PROJECT_DIR$/work-data/data-api/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

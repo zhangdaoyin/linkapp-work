@@ -18,6 +18,8 @@
         <module>transaction-byte-cc</module>
         <!--byteCC测试用例-->
         <module>dubbo-sample</module>
+        <!-- api测试用例 -->
+        <module>data-api</module>
 
         <module>springboot-sample/sample-consumer</module>
         <module>springboot-sample/sample-provider</module>

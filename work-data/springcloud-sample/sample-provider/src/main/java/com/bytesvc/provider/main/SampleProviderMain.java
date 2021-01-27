@@ -16,12 +16,12 @@ import org.springframework.context.annotation.Import;
 @Import(SpringCloudSecondaryConfiguration.class)
 @EnableDiscoveryClient
 @SpringBootApplication(scanBasePackages = "com.bytesvc.provider")
-@EnableAutoConfiguration(exclude = { MongoAutoConfiguration.class }) // 使用文件存储时, 不需要配置mongodb
+@EnableAutoConfiguration(exclude = {MongoAutoConfiguration.class}) // 使用文件存储时, 不需要配置mongodb
 public class SampleProviderMain {
 
-	public static void main(String[] args) {
-		new SpringApplicationBuilder(SampleProviderMain.class).bannerMode(Banner.Mode.OFF).run(args);
-		System.out.println("springcloud-sample-provider started!");
-	}
+    public static void main(String[] args) {
+        new SpringApplicationBuilder(SampleProviderMain.class).bannerMode(Banner.Mode.OFF).run(args);
+        System.out.println("springcloud-sample-provider started!");
+    }
 
 }

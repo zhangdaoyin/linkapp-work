@@ -3,6 +3,7 @@
   <component name="Encoding" addBOMForNewFiles="with NO BOM">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/work-data" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/work-data/data-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/work-data/data-cas" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/work-data/dubbo-sample" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/work-data/dubbo-sample/sample-api" charset="UTF-8" />
