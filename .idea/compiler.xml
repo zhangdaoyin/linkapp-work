@@ -6,21 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="data-api" />
         <module name="data-cas" />
-        <module name="dubbo-sample-api-0.5.x" />
-        <module name="dubbo-sample-consumer-0.5.x" />
-        <module name="dubbo-sample-provider-0.5.x" />
-        <module name="springboot-sample-consumer-0.5.x" />
-        <module name="springboot-sample-provider-0.5.x" />
-        <module name="springcloud-sample-consumer-0.5.x" />
-        <module name="springcloud-sample-eureka-0.5.x" />
-        <module name="springcloud-sample-provider-0.5.x" />
         <module name="transaction-byte-cc" />
         <module name="work-datasource-mysql" />
+        <module name="work-design" />
+        <module name="work-interview" />
         <module name="work-kafka" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="data-api" target="1.8" />
       <module name="data-cas" target="1.8" />
       <module name="dubbo-sample-api-0.5.x" target="1.5" />
       <module name="dubbo-sample-consumer-0.5.x" target="1.5" />
@@ -35,16 +31,21 @@
       <module name="transaction-byte-cc" target="1.8" />
       <module name="work-data" target="1.8" />
       <module name="work-datasource-mysql" target="1.8" />
+      <module name="work-design" target="1.8" />
+      <module name="work-interview" target="1.8" />
       <module name="work-kafka" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="data-api" options="-parameters" />
       <module name="data-cas" options="-parameters" />
       <module name="linkapp-work" options="-parameters" />
       <module name="transaction-byte-cc" options="-parameters" />
       <module name="work-data" options="-parameters" />
       <module name="work-datasource-mysql" options="-parameters" />
+      <module name="work-design" options="-parameters" />
+      <module name="work-interview" options="-parameters" />
       <module name="work-kafka" options="-parameters" />
     </option>
   </component>
