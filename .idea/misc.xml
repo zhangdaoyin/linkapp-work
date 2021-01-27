@@ -11,11 +11,21 @@
         <option value="$PROJECT_DIR$/work-design/pom.xml" />
         <option value="$PROJECT_DIR$/work-data/pom.xml" />
         <option value="$PROJECT_DIR$/work-data/data-api/pom.xml" />
+        <option value="$PROJECT_DIR$/work-interview/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/work-data/dubbo-sample/pom.xml" />
+        <option value="$PROJECT_DIR$/work-data/dubbo-sample/sample-api/pom.xml" />
+        <option value="$PROJECT_DIR$/work-data/dubbo-sample/sample-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/work-data/dubbo-sample/sample-provider/pom.xml" />
         <option value="$PROJECT_DIR$/work-data/pom.xml" />
+        <option value="$PROJECT_DIR$/work-data/springboot-sample/sample-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/work-data/springboot-sample/sample-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/work-data/springcloud-sample/sample-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/work-data/springcloud-sample/sample-eureka-server/pom.xml" />
+        <option value="$PROJECT_DIR$/work-data/springcloud-sample/sample-provider/pom.xml" />
       </set>
     </option>
   </component>
